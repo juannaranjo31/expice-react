@@ -6,27 +6,27 @@ const List = styled.ul`
 
   a {
     text-decoration: none;
-    color: #2E266F;
+    color: #2e266f;
 
     &:hover {
-      color: #FE043C;
+      color: #fe043c;
       cursor: pointer;
     }
   }
-`;
 
-const ListItem = styled.li`
-  list-style: none;
-  margin-left: 20px;
-  margin-right: 20px;
+  li {
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 `;
 
 export const MenuNav = ({ items = [] }) => {
   return (
     <List>
-      {items.map((item) => (
-        <a>
-          <ListItem>{item}</ListItem>
+      {items.map((item, index) => (
+        <a key={index} href="/#">
+          <li>{item}</li>
         </a>
       ))}
     </List>

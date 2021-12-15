@@ -10,3 +10,10 @@ export const PanelSession = styled.div`
   padding-top: 20px;
   padding-bottom: 150px;
 `;
+
+export const SessionPanel = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;

@@ -38,7 +38,7 @@ export const PanelHero = () => {
         <InputForm placeholder="Search Restaurant, Food"></InputForm>
         <ButtonForm>GO</ButtonForm>
       </Form>
-      <Location><i class="location__icon fas fa-map-marker-alt"></i> Rajshahi</Location>
+      <Location><i className="fas fa-map-marker-alt"></i> Rajshahi</Location>
     </Panel>
   );
 };
